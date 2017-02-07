@@ -127,7 +127,7 @@ export class DashboardComponent implements OnInit {
 
       for(let i:number=0; i<this.studentSubmissions.length; i++) {
         console.log(this.studentSubmissions[i]["Exercise"]);
-        this.studentSubmissions[i]["ExerciseName"]=this.exerciseNames[this.studentSubmissions[i]["Exercise"]];
+        this.studentSubmissions[i]["ExerciseName"]=this.exerciseNames[this.studentSubmissions[i]["Exercise"][0]];
       }  
     }
 }
